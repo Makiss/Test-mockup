@@ -1,0 +1,513 @@
+/********************
+GENERAL STYLES
+********************/
+
+
+body {
+	position:  relative;
+	font-family:  "PT Sans", Arial, sans-serif;
+	font-size:  14px;
+	line-height:  22px;
+	letter-spacing:  0.35px;
+	color:  #767676;
+}
+
+a {
+	font-size:  18px;
+	line-height:  18px;
+	color:  #767676;
+	text-decoration:  none;
+}
+
+a:hover {
+	text-decoration:  underline;
+}
+
+img {
+	max-width:  100%;
+	height:  auto;
+}
+
+.container {
+	margin:  0 auto;
+	padding:  0 10px;
+	width:  980px;
+}
+
+.clearfix:after {
+	content:  '';
+	display:  table;
+	clear:  both;
+}
+
+.column-left {
+	float:  left;
+}
+
+.column-right {
+	float:  right;
+}
+
+
+
+/*********************
+MAIN HEADER
+*********************/
+
+
+
+.main-header {
+	width:  100%;
+}
+.main-header .main-header-top {
+	padding:  36px 0;
+	background-color:  #dcdcdc;
+}
+
+.main-header-top .logo {
+	margin:  23px 0;
+}
+
+.main-header-top .call-center {
+	font-family:  "Open Sans Condensed", Arial, sans-serif;
+	font-size:  40px;
+	line-height:  46px;
+	text-align:  right;
+}
+
+.call-center a {
+	display:  inline-block;
+	position:  relative;
+	top:  -15px;
+	font-family:  "PT Sans", Arial, sans-serif;
+	font-size:  24px;
+	font-weight:  700;
+	line-height:  46px;
+	text-decoration:  none;
+}
+
+.call-center a:after {
+	content:  "------------------";
+	position:  absolute;
+	bottom:  -6.5px;
+	right:  0;
+	font-family:  'Open Sans Condensed', Arial, sans-serif;
+	font-size:  28px;
+	letter-spacing:  0.9px;
+}
+
+.main-header .main-header-nav {
+	text-align:  center;
+	background-color:  #777;
+}
+
+.main-header-nav ul {
+	padding:  26px 0;
+	font-size:  0;
+}
+
+.main-header-nav li {
+	position:  relative;
+	display:  inline-block;
+	margin-bottom:  3px;
+	padding-left:  20px;
+	padding-right:  22px;
+	vertical-align:  middle;
+}
+
+.main-header-nav li:after {
+	content:  "";
+	position:  absolute;
+	top:  -1px;
+	right:  0;
+	height:  25px;
+	width:  2.5px;
+	background-color:  #fff;
+}
+
+.main-header-nav li:last-of-type:after {
+	display:  none;
+}
+
+.main-header-nav a {
+	position:  relative;
+	font-size:  30px;
+	color:  #fff;
+	text-decoration:  none;
+}
+
+.main-header-nav a:hover:after {
+	content:  "";
+	position:  absolute;
+	bottom:  2px;
+	left:  0;
+	display:  block;
+	height:  2.5px;
+	width:  100%;
+	background-color:  #fff;
+}
+
+.main-header .main-header-slider {
+	position:  relative;
+	width:  100%;
+	height:  400px;
+	background-color:  #f8f8f8;
+	overflow:  hidden;
+}
+
+.main-header-slider .slide-area {
+	position:  relative;
+	width:  1400px;
+	margin:  0 auto;
+}
+
+.main-header-slider .slide {
+	display:  none;
+	position:  absolute;
+	top:  0;
+	margin-top:  -62px;
+}
+
+.main-header-slider .active-slide {
+	display:  block;
+}
+
+.main-header-slider .slider-nav {
+	position:  absolute;
+	top:  155px;
+	left:  50%;
+	z-index:  50;
+	margin-left:  -477.5px;
+	width:  955px;
+	text-align:  center;
+}
+
+.slider-nav .arrow {
+	width:  34px;
+	height:  61px;
+}
+
+.slider-nav .arrow-prev {
+	float:  left;
+}
+
+.slider-nav .arrow-next {
+	float:  right;
+}
+
+
+
+/*********************
+MAIN CONTENT STYLES
+*********************/
+
+
+.main-content {
+	padding-top:  8px;
+}
+
+.main-content-header .breadcrumbs {
+	margin-bottom:  28px;
+}
+
+.breadcrumbs ul {
+	font-size:  0;
+}
+
+.breadcrumbs li {
+	position:  relative;
+	display:  inline-block;
+	padding-right:  5px;
+	padding-left:  9px;
+	font-size:  14px;
+	vertical-align:  top;
+}
+
+.breadcrumbs li:first-of-type {
+	padding-left:  0;
+}
+
+.breadcrumbs li:after {
+	content:  "/";
+	position:  absolute;
+	right:  -5px;
+}
+
+.breadcrumbs li:last-of-type:after {
+	display:  none;
+}
+
+.breadcrumbs a {
+	font-size:  14px;
+	text-decoration:  underline;
+}
+
+.main-content .content {
+	padding-bottom:  45px;
+}
+
+.content .content-nav {
+	margin-bottom:  106px;
+}
+
+.content-nav a {
+	line-height:  30px;
+	letter-spacing:  0.35px;
+}
+
+.dropdown-toggle + .dropdown-menu {
+	display:  none;
+}
+
+.dropdown-menu li {
+	margin-left:  20px;
+	list-style-type:  disc;
+}
+
+.dropdown-menu a {
+	font-size:  14px;
+	line-height:  22px;
+}
+
+.dropdown-menu a:hover {
+	color:  #010101;
+}
+
+.content .price-list {
+	margin-left:  20px;
+	text-align:  center;
+}
+
+.price-list a:first-of-type {
+	text-decoration:  none;
+}
+
+.price-list a {
+	font-size:  30px;
+	font-weight:  700;
+	color:  #444;
+}
+
+.content > .column-right {
+	width:  780px;
+	font-size:  0;
+}
+
+.content .catalogue-item {
+	display:  inline-block;
+	margin-right:  15px;
+	margin-bottom:  20px;
+	padding:  20px 20px 10px;
+	width:  210px;
+	height:  350px;
+	overflow:  auto;
+	font-size:  18px;
+	vertical-align:  top;
+	background-color:  #dcdcdc;
+}
+
+.content .catalogue-item:nth-child(3n) {
+	margin-right:  0;
+}
+
+.catalogue-item figure {
+	margin-bottom:  50px;
+}
+
+.catalogue-item img {
+	margin-bottom:  10px;
+}
+
+.cart-block .price {
+	margin-right:  65px;
+	font-size:  28px;
+	font-weight:  700;
+}
+
+.cart-block .cart {
+	display:  inline-block;
+	width:  28px;
+	height:  21px;
+	background-image:  url(../images/cart-icon.png);
+}
+
+.content .pagination {
+	width:  100%;
+	margin-top:  6px;
+	margin-bottom:  20px;
+	text-align:  center;
+}
+
+.pagination li {
+	display:  inline-block;
+	margin-right:  21px;
+	vertical-align:  top;
+}
+
+.pagination a {
+	font-size:  14px;
+	line-height:  22px;
+}
+
+.pagination .current {
+	font-size:  18px;
+	line-height:  22px;
+	color:  #444;
+}
+
+.content .content-footer {
+	border-top:  1px solid #e4e4e4;
+}
+
+.content-footer p {
+	width:  375px;
+	font-size:  14px;
+	line-height:  22px
+}
+
+
+/*********************
+MAIN FOOTER STYLES
+*********************/
+
+.main-footer,
+.main-footer a {
+	color:  #fff;
+}
+
+.main-footer {
+	padding-top:  45px;
+	padding-bottom:  40px;
+	background-color:  #777;
+}
+
+.main-footer a {
+	font-size:  14px;
+	line-height:  26px;
+	text-decoration:  underline;
+}
+
+.main-footer .copyright {
+	margin-right:  158px;
+}
+
+.main-footer .author-info {
+	width:  215px;
+}
+
+.author-info .column-left {
+	margin-right:  10px;
+	margin-top:  8px;
+}
+
+
+
+/***********************
+MODAL WINDOW STYLES
+***********************/
+
+
+.form-background {
+	display:  none;
+	position:  absolute;
+	top:  0;
+	left:  0;
+	z-index:  100;
+	width:  100%;
+	height:  100%;
+	background-color:  rgba(0,0,0,0.5);
+}
+
+.form-background .feedback-form {
+	position:  relative;
+	margin:  0 auto;
+	margin-top:  284px;
+	padding-top:  33px;
+	width:  466px;
+	color:  #535353;
+	text-align:  center;
+	background-color:  #fff;
+}
+
+.feedback-form h2 {
+	margin-bottom:  30px;
+	font-size:  24px;
+	font-weight:  700;
+	line-height:  28px;
+	text-transform:  uppercase;
+}
+
+.feedback-form label {
+	display:  block;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+	padding:  10px 11px;
+	border:  1px solid #c3c3c3;
+}
+
+.feedback-form input {
+	margin-bottom:  15px;
+	width:  314px;
+}
+
+.feedback-form .warning {
+	font-style:  italic;
+	color:  #dc7f7f;
+	border:  1px solid #fcd3d3;
+	-webkit-box-shadow:  inset 0 0 13px rgba(228,106,106,0.75);
+	   -moz-box-shadow:  inset 0 0 13px rgba(228,106,106,0.75);
+	        box-shadow:  inset 0 0 13px rgba(228,106,106,0.75);
+}
+
+.feedback-form textarea {
+	margin-bottom:  21px;
+	width:  316px;
+	height:  140px;
+}
+
+.feedback-form .btn {
+	padding:  11px 8px;
+	width:  auto;
+	font-size:  17.77px;
+	font-weight:  bold;
+	line-height:  18px;
+	text-transform:  uppercase;
+	letter-spacing:  -0.1px;
+	color:  #fff;
+	background-color:  #777;
+	border:  1px solid #b0b0b0;
+}
+
+.feedback-form .modal-close {
+	position:  absolute;
+	width:  26.5px;
+	height:  26.5px;
+	right:  -26.5px;
+	top:  -26.5px;
+	background-color:  #777;
+	cursor:  pointer;
+}
+
+.feedback-form .modal-close:after,
+.feedback-form .modal-close:before {
+	content:  "";
+	position:  absolute;
+	top:  50%;
+	left:  2.25px;
+	margin-top:  -1px;
+	width:  22px;
+	height:  2px;
+	background-color:  #fff;
+}
+
+.feedback-form .modal-close:after {
+	transform:  rotate(45deg);
+}
+
+.feedback-form .modal-close:before {
+	transform:  rotate(-45deg);
+}
+
+
